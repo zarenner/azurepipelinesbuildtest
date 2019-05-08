@@ -21,7 +21,7 @@ steps:
   inputs:
     command: 'push'
     feedsToUse: 'select'
-    packagesToPush: '*.nupkg'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: 'zarennergithubtest'
     versioningScheme: 'off'
